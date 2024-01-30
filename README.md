@@ -29,3 +29,9 @@ Generates a comma-separated list from the 10th most frequent port to the 30th mo
 Simply plug this into your `nmap` command:
 
     nmap <ip> -p 139,143,53,135,3306,8080,1723,111,995,993,5900,1025,587,8888,199,1720,465,548,113,81,6001
+
+## Q&A
+
+Q: Why not just merge TCP and UDP into one script?
+
+A: Because I'm lazy. I'll try to get around to adding a `-u` flag or something.
