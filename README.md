@@ -22,7 +22,7 @@ Display top ports between specified range (separated by commas):
 
     ./nmap-top-ports-range-selector -r 10-30
 
-Generates a comma-separated list from the 10-30th most frequent ports:
+Generates a comma-separated list from the `10`-`30`th most frequent ports:
 
     139,143,53,135,3306,8080,1723,111,995,993,5900,1025,587,8888,199,1720,465,548,113,81,6001
 
