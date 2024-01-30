@@ -16,7 +16,7 @@ Display top [NUMBER] of ports (separated by commas):
 
 Display top ports between specified range (separated by commas):
 
-    -r, --range [START-END]t
+    -r, --range [START-END]
 
 ## Example:
 
