@@ -4,9 +4,15 @@ A bash script to generate comma-separated ranges of top ports for Nmap.
 
 ## Why?
 
-We all know you can use `--top-ports 1500` on Nmap, but _what if_ we want to scan all the top ports from `1501-2000`? Or any other range?
+We all know you can use `--top-ports 1500` on Nmap... 
+
+But _what if_ we want to scan all the top ports from `1501-2000`? Or any other range of top ports?
 
 Well this script generates ranges of top ports for you to be able to do that.
+
+This is useful because if you've already scanned `--top-ports 1000` and you want to now scan the next 1000 usually you'd have to run `--top-ports 2000`. BUT this _already includes the top 1000 ports you've already scanned_ so this is a waste of time. 
+
+This script saves you time!
 
 ## Usage
 
