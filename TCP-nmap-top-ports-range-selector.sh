@@ -4,8 +4,8 @@
 usage() {
     echo "Usage: $0 [OPTION]"
     echo "Options:"
-    echo "  -t, --top [NUMBER]       Display the top NUMBER of ports, separated by commas."
     echo "  -r, --range [START-END]  Display ports in the range START to END, separated by commas."
+    echo "  -t, --top [NUMBER]       Display the top NUMBER of ports, separated by commas."
     exit 1
 }
 
