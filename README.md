@@ -10,13 +10,13 @@ Well this script generates ranges of top ports for you to be able to do that.
 
 ## Usage
 
-Display top [NUMBER] of ports (separated by commas):
+Display top ports between specified range:
+
+    -r, --range [START]-[END]
+
+Display top [NUMBER] of ports:
     
     -t, --top [NUMBER]
-
-Display top ports between specified range (separated by commas):
-
-    -r, --range [START-END]
 
 ## Example:
 
