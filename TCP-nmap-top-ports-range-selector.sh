@@ -50,7 +50,7 @@ format_output() {
 if [[ ! -z "$TOP" ]]; then
     awk '/tcp/ {print $2 " " $3}' "$file" | sort -rnk2 | cut -d'/' -f1 | head -n "$TOP" | format_output
 elif [[ ! -z "$RANGE" ]]; then
-    START=$(cut -d'-' -f1 <<< "$RANGE")
+    START=$(cut -d'-' -f1 <<< "$RANGE") # Note to future self: `<<< "$RANGE"` is an alternative to `echo "$RANGE" | <etc>`
     END=$(cut -d'-' -f2 <<< "$RANGE")
     awk '/tcp/ {print $2 " " $3}' "$file" | sort -rnk2 | cut -d'/' -f1 | sed -n "$START,$END"p | format_output
 else
